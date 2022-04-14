@@ -1,4 +1,0 @@
-application:
-  message: Configured by Azure Spring Cloud
-server:
-  port: 8083
