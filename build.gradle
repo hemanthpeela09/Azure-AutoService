@@ -31,7 +31,7 @@ azurewebapp {
     runtime {
       os = 'Windows'
       webContainer = 'Tomcat 9.0' // or 'Java SE' if you want to run an executable jar
-      javaVersion = 'Java 8'
+      javaVersion = 'Java 11'
     }
     auth {
         type = 'azure_cli' // support azure_cli, oauth2, device_code and service_principal
