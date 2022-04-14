@@ -23,3 +23,19 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+azurewebapp {
+    subscription = 'Azure Pass - Sponsorship'
+    resourceGroup = 'AzDemoProject'
+    appName = 'Azure-AutoService'
+    pricingTier = 'Free'
+    region = 'Central US'
+    runtime {
+      os = 'Windows'
+      webContainer = 'Tomcat 9.0' // or 'Java SE' if you want to run an executable jar
+      javaVersion = 'Java 8'
+    }
+    auth {
+        type = 'azure_cli' // support azure_cli, oauth2, device_code and service_principal
+    }
+}
